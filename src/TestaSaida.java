@@ -1,0 +1,24 @@
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+
+
+public class TestaSaida {
+
+	public static void main(String[] args) throws IOException {
+		OutputStream os = new FileOutputStream("saida.txt");
+		OutputStreamWriter osw = new OutputStreamWriter(os);
+		BufferedWriter bw = new BufferedWriter(osw);
+		
+		bw.write("caelum");
+		bw.write(" teste");
+		bw.newLine();
+		bw.write("linha nova?");
+		bw.newLine();
+		bw.write("sucesso!!");
+		bw.close();
+	}
+
+}

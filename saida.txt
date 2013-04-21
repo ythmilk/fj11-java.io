@@ -1,0 +1,4 @@
+testando a saida com o scanner, vamos ver se escreveu todo este texto
+eu dei um enter tambem, funcionou?
+
+
