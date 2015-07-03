@@ -16,11 +16,11 @@ public class TestaEntrada {
 		BufferedReader br = new BufferedReader(isr);
 		String s = br.readLine();
 		
-		while (s != null) {
+		while (s != -1) {
 			System.out.println(s);
 			s = br.readLine();
 		}
-		
+		//关闭BufferedReader
 		br.close();
 
 	}
